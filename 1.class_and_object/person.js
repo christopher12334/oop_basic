@@ -2,21 +2,21 @@ class Person{
     #name = "";
     #age = 0;
 
-    setName(name) {
-        this.#name = name
+    constructor(name) {
+        this.#name = name;
     }
 
     getName() {
-        return this.#name
+        return this.#name;
     }
 
     setAge(age) {
-        this.#age = age
+        this.#age = age;
     }
 
     getAge() {
-        return this.#age
+        return this.#age;
     }
 }
 
-module.exports = {Person}
+module.exports = {Person};
