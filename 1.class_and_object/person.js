@@ -1,9 +1,22 @@
+
 class Person{
     #name = "";
-    #age = 0;
+    #age = 1;
 
     constructor(name) {
         this.#name = name;
+    }
+
+    becomeolder() {
+        this.#age++
+    }
+
+    isAdult(){
+        return this.#age >= 18;
+    }
+
+    printPerson() {
+        console.log(this.#name + ` age: ` + this.#age + ` years`)
     }
 
     getName() {
@@ -19,4 +32,4 @@ class Person{
     }
 }
 
-module.exports = {Person};
+module.exports = { Person };
